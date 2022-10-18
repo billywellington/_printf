@@ -1,5 +1,5 @@
 #ifndef _MAIN_H
-#define  _MAIN_H
+#define _MAIN_H
 
 #include <stdarg.h>
 #include <unistd.h>
@@ -13,11 +13,17 @@
  * Description: struct that stores pointers to a
  * printer functions.
  */
-typedef struct print
+typedef struct intface
 {
-	char *type_arg;
-	int (*f)(va_list, char *, unsigned int);
-} print_t;
+	char id;
+	int (*fn)(va_list);
+} interface;
+
+int _printf(const char *format, ...);
+int _print_char(va_list ls);
+int _print_mod(va_list ls);
+int _print_string(va_list ls);
+int _print_int(va_list ls);
 
 int _printf(const char *format, ...);
 int print_prg(va_list __attribute__((unused)), char *, unsigned int);
