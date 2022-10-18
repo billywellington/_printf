@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * _printf - prints and input into the standard output
  * @format: the format string
