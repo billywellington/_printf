@@ -1,4 +1,3 @@
-cat main.c
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
@@ -8,8 +7,8 @@ cat main.c
      *
      * Return: Always 0
      */
-    int
-    main(void)
+
+    int main(void)
 {
     int len;
     int len2;
