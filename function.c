@@ -8,7 +8,6 @@
  *
  * Return: the number of printed chars, int
  */
-
 int _print_char(va_list ls)
 {
 	char c = va_arg(ls, int);
@@ -23,7 +22,6 @@ int _print_char(va_list ls)
  *
  * Return: the number of printed chars, int
  */
-
 int _print_mod(va_list ls)
 {
 	char c = '%';
@@ -40,7 +38,6 @@ int _print_mod(va_list ls)
  *
  * Return: the number of printed chars, int
  */
-
 int _print_string(va_list ls)
 {
 	int i, count = 0;
@@ -64,7 +61,6 @@ int _print_string(va_list ls)
  *
  * Return: the number of printed chars, int
  */
-
 int _print_int(va_list ls)
 {
 	int a, expo = 1, len = 0;
